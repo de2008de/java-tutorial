@@ -2,6 +2,13 @@
 
 ![logo](../logo.png)
 
+- [Access Modifiers](#access-modifiers)
+  * [Private](#private)
+  * [Default](#default)
+  * [Protected](#protected)
+  * [Public](#public)
+  * [Overriding Methods](#overriding-methods)
+
 # Access Modifiers
 
 There are four types of access modifiers in Java which put access restriction on fields and methods to protect them:

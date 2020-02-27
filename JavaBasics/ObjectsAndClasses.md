@@ -2,6 +2,10 @@
 
 ![logo](../logo.png)
 
+- [Java Objects and Classes](#java-objects-and-classes)
+  * [Constructors: Create an Object](#constructors-create-an-object)
+  * [Classes: Blueprint for Objects](#classes-blueprint-for-objects)
+
 # Java Objects and Classes
 
 Java is an object-oriented programming language. That means we will use a lot of objects in Java so it is very important to learn about them.
