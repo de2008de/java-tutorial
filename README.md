@@ -1,4 +1,4 @@
-![Language](https://img.shields.io/badge/language-Java-brightgreen.svg) ![Author](https://img.shields.io/badge/author-David%20Chou-blue) ![version](https://img.shields.io/badge/version-Java%208-red)
+![Author](https://img.shields.io/badge/author-David%20Chou-blue) ![Language](https://img.shields.io/badge/language-Java-brightgreen.svg)  ![version](https://img.shields.io/badge/version-Java%208-red)
 
 ![Logo](logo.png)
 
@@ -12,7 +12,8 @@ This project is expected to be finished within 3 months.
 |---|
 | Java Types | 
 | [Objects and Classes](JavaBasics/ObjectsAndClasses.md) |
-| [Encapsulation](JavaBasics/Encapsulation.md) |
+| [AccessModifiers](JavaBasics/AccessModifiers.md) |
+| Overriding and Overloading |
 | Autoboxing and unboxing | 
 |Collections |
 | **More contents will be added** |
