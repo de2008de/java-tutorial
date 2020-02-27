@@ -13,6 +13,7 @@ This project is expected to be finished within 3 months.
 | Java Types | 
 | [Objects and Classes](JavaBasics/ObjectsAndClasses.md) |
 | [AccessModifiers](JavaBasics/AccessModifiers.md) |
+| Encapsulation |
 | Overriding and Overloading |
 | Autoboxing and unboxing | 
 |Collections |
