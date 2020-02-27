@@ -1,3 +1,7 @@
+![category](https://img.shields.io/badge/Category-Java%20Basics-brightgreen)
+
+![logo](../logo.png)
+
 # Java Objects and Classes
 
 Java is an object-oriented programming language. That means we will use a lot of objects in Java so it is very important to learn about them.
