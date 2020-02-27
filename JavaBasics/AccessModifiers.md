@@ -11,7 +11,7 @@
 
 # Access Modifiers
 
-There are four types of access modifiers in Java which put access restriction on fields and methods to protect them:
+There are four types of access modifiers in Java which put access restriction on fields and methods, and we can apply some of the access modifiers to a class:
 
 - Private
 
@@ -23,7 +23,7 @@ There are four types of access modifiers in Java which put access restriction on
 
 ## Private
 
-When a field or a method has been defined as private, they can only be accessed within the class.
+When we define a field or a method as private, we can only access them within the same class.
 
 ```java
 class Book {
@@ -41,9 +41,9 @@ class Book {
 }
 ```
 
-As can be seen from the above codes, title is a private field in class Book so it can only be accessed within class Book. The method open is within the class; therefore, it can use title directly.
+As can be seen from the above codes, the title is a private field in class Book, so we can only access it within the class Book. For example, the method open() is within the class Book, so it can use the field title directly.
 
-However, if we try to access title outside the class, we will get an error.
+However, if we try to access the private field title or the private method open() outside the class Book, we get errors.
 
 ```java
 class Pen {
@@ -54,31 +54,16 @@ class Pen {
 
         // error: The field Book.title is not visible
         System.out.println(book.title);
+
+        // error: The method open() from the type Book is not visible
+        book.open();
         
     }
 
 }
 ```
 
-If we try to call a private method outside of its class, we will get an error.
-
-```java
-class Pen {
-
-    public static void main(String[] args) {
-
-        Book book = new book("My Book");
-
-        // error: The method open() from the type Book is not visible
-        book.open();
-
-    }
-
-}
-
-```
-
-A class can be defined as private as well. A private class can only be accessed within the enclosing class.
+We can define a class as private, and we can only access a private class within the class that encloses it.
 
 ```java
 class Book {
@@ -111,7 +96,7 @@ class Water {
 
 ## Default
 
-If we do not specify access modifiers, then the access modifier will be default.
+If we do not specify access modifiers, then it is a default access modifier. We can only access a default field, method, or class within the same package that defines them.
 
 ```java
 package A;
@@ -128,7 +113,7 @@ class Book {
 }
 ```
 
-If we try to access title outside package A, we will get an error.
+If we try to access the default field title outside package A, we get an error.
 
 ```java
 package B;
@@ -146,7 +131,7 @@ class Pen {
 }
 ```
 
-However, we can access title within the same package even if we access it within different class.
+However, we can access the field title within the same package even if we access it within a different class.
 
 ```java
 package A;
@@ -166,11 +151,13 @@ class Pen {
 
 ```
 
-Default can be applied to class as well. A default class can only be acessed within the same package.
+We can apply the default access modifier to a class as well. A class with a default access modifier can only be accessed within the same package.
 
 ## Protected
 
-A protected field or method can be accessed within or outside the same package. If they are accessed outside the same package, they can only be accessed through **inheritance**.
+If we define a field or a method with a protected access modifier, we can access them within the same package. However, if we want to access them outside the same package, we need to access them through **inheritance**.
+
+We can access an **inherited** protected field or method within a child class.
 
 ```java
 package A;
@@ -206,14 +193,14 @@ class MyBook extends Book {
 
         // Ok because MyBook is a child class of Book
         // Therefore, MyBook inherits title so we can access
-        // it here
+        // the inherited field title here
         System.out.println(mb.title);
 
         Book book = new Book();
     
-        // Error because this title field belongs to Book since this is an object of Book.
-        // Therefore, MyBook does not inherit this specific
-        // title here
+        // Error because this field title belongs to Book since this is an object of Book
+        // Therefore, MyBook does not inherit this particular
+        // title here so we cannot access it here
         System.out.println(book.title);
 
     }
@@ -224,9 +211,9 @@ class Table {
 
     public static void main(String[] args) {
 
-        Mybook mb = new MyBook();
+        MyBook mb = new MyBook();
 
-        // Error because Table is neither a child class of Book nor a child class of MyBook
+        // Error because Table is not a child class of MyBook
         // so it cannot access the protected field title
         System.out.println(mb.title);
 
@@ -235,13 +222,13 @@ class Table {
 }
 ```
 
-Although MyBook inherits title from Book, the field title is still protected. Therefore, class Table cannot access the protected field title of MyBook.
+Although the class MyBook inherits the field title from the class Book, the access modifier is still protected. Therefore, the class Table cannot access the protected field title of MyBook since the class Table is not a child class of MyBook.
 
-In addition, the keyword protected cannot be applied to class.
+Also, we cannot apply the protected access modifier to a class.
 
 ## Public
 
-Public is an access modifier that allows access from anywhere and can be applied to class.
+The access modifier public allows access from anywhere, and we can apply it to a class.
 
 ```java
 package A;
@@ -261,7 +248,7 @@ class Table {
         // Ok because class Book is public
         Book book = new Book();
 
-        // Ok because title is public
+        // Ok because the field title is public
         System.out.println(book.title);
 
     }
@@ -271,9 +258,9 @@ class Table {
 
 ## Overriding Methods
 
-If we are overriding a method, the overridden method cannot be more restrictive.
+If we are overriding a method, the overridden method cannot be defined with a more restrictive access modifier.
 
-For example, a protected method cannot be overriden as a private method.
+For example, we cannot override a protected method to a private method.
 
 ```java
 class Book {
