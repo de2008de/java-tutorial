@@ -10,11 +10,12 @@ This project is expected to be finished within 3 months.
 
 |:coffee: Java Bascis |
 |---|
-| Java Types | 
 | [Objects and Classes](JavaBasics/ObjectsAndClasses.md) |
 | [AccessModifiers](JavaBasics/AccessModifiers.md) |
-| Encapsulation |
 | [Overriding and Overloading](JavaBasics/OverridingAndOverloading.md) |
+| [Reference and Value](JavaBasics/ReferenceAndValue.md) |
+| Java Types | 
 | Autoboxing and unboxing | 
+| Encapsulation |
 |Collections |
 | **More contents will be added** |
