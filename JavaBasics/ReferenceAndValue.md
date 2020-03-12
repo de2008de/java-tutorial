@@ -2,8 +2,6 @@
 
 ![logo](../logo.png)
 
-![cover](img/reference_value_cover.png)
-
 We can pass a reference or a value to a function. Passing references or passing values are different things, and it is essential to understand the difference.
 
 ![animation](img/pass_by_reference_value_animation2.gif)

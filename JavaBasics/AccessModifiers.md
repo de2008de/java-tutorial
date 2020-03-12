@@ -2,8 +2,6 @@
 
 ![logo](../logo.png)
 
-![cover](img/access_modifiers_cover.png)
-
 - [Access Modifiers](#access-modifiers)
   * [Private](#private)
   * [Default](#default)

@@ -14,8 +14,9 @@ This project is expected to be finished within 3 months.
 | [Access Modifiers](JavaBasics/AccessModifiers.md) |
 | [Overriding and Overloading](JavaBasics/OverridingAndOverloading.md) |
 | [Reference and Value](JavaBasics/ReferenceAndValue.md) |
+| String Class |
 | Java Types | 
 | Autoboxing and unboxing | 
 | Encapsulation |
-|Collections |
+| Collections |
 | **More contents will be added** |

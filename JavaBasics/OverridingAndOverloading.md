@@ -2,8 +2,6 @@
 
 ![logo](../logo.png)
 
-![cover](img/overriding_overloading_cover1.png)
-
 - [What is Overriding](#what-is-overriding)
 - [What is Overloading](#what-is-overloading)
 - [Conclusion](#conclusion)
